@@ -11,6 +11,48 @@
   background-color: rgba(238, 26, 11, 0.1);
 }
 
-body {
-  background-color: black;
+/* ///////////////////////////////////////////////// */
+/* //////////////    G E N E R A L     ///////////// */
+/* ///////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* ************************************************* */
+/* *******     M E D I A    Q U E R I E S   ******** */
+/* ************************************************* */
+
+/* // x-Small devices  */
+@media all and (max-width: 575px) {
+  body {
+    background-color: red;
+  }
 }
+
+/* // Small devices (landscape phones, 576px and up)  */
+@media all and (min-width: 576px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media all and (min-width: 768px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+  body {
+    background-color: rgba(245, 231, 231, 0.822);
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* /////////   M E D I A    Q U E R I E S    /////// */
+/* ///////////////////////////////////////////////// */
