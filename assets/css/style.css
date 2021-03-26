@@ -26,6 +26,12 @@
   margin-right: 20px;
 }
 
+.mc_clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -58,23 +64,87 @@ main::after {
 }
 
 /* *****    M  A I N   N  A  V   ******* */
-main .main-nav {
+main .main_nav {
   float: left;
   width: 230px;
   height: 100%;
   background-color: darksalmon;
 }
 
-main .main-nav .nav-top{
+main .main_nav .nav_top{
   height: calc(100% - 80px);
-  background-color: #A6F52D;
+  background-color: #000000;
 }
 
-main .main-nav .nav-top .nav-logo-mobile{
+main .main_nav .nav_top .nav_logo{
+  padding-top: 15px;
+  margin-left: 15px;
+  height: 90px;
+}
+
+main .main_nav .nav_top .nav_logo img{
+  width: 71%;
+}
+
+main .main_nav .nav_top .nav_logo_mobile{
   display: none;
+  padding: 10px;
 }
 
-main .main-nav .nav-bottom{
+main .main_nav .nav_top .left_menu li{
+  background-color: #000000;
+  width: 230px;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+main .main_nav .nav_top .left_menu li:hover{
+  background-color: #272525;
+  border-left: 4px solid #A6F52D ;
+  color: white;
+}
+
+main .main_nav .nav_top .left_menu li:hover img{
+  filter: brightness(1);
+}
+
+main .main_nav .nav_top .left_menu li:active{
+  background-color: #363232;
+}
+
+main .main_nav .nav_top .left_menu ul li a{
+  text-decoration: none;
+}
+
+main .main_nav .nav_top .left_menu .btn_logo,
+.btn_text {
+  height: 100%;
+  float: left;
+}
+
+main .main_nav .nav_top .left_menu .btn_logo {
+  height: 40px;
+  width: 25%;
+  text-align: center;
+  color: #7B7B7A;
+}
+
+main .main_nav .nav_top .left_menu .btn_logo img{
+  height: 100%;
+  filter: brightness(0.5);
+}
+
+main .main_nav .nav_top .left_menu  .btn_text {
+  width: 75%;
+  height: 100%;
+  font-size: 0.9em;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+main .main_nav .nav_bottom{
   height: 80px;
   background-color: royalblue;
 }
@@ -89,28 +159,57 @@ main .m_content {
   overflow-y: auto;
 }
 
-main .m_content .call-to-action {
+/* *****    C A L L   TO    A C T I O N  ******* */
+main .m_content .call_to_action {
   height: 90px;
   background-color: rgba(14, 7, 7, 0.8);
   position: fixed;
   width: calc(100% - 230px);
   z-index: 1;
+  text-align: center;
 }
+
+main .m_content .call_to_action ul {
+  list-style: none;
+}
+
+main .m_content .call_to_action ul:after {
+  content: '';
+  display: table;
+  clear: both;
+} 
+
+main .m_content .call_to_action ul li {
+  width: 240px;
+  height: 45px;
+  line-height: 45px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+main .m_content .call_to_action li:active {
+  background-color: rgba(14, 7, 7, 0.959);
+}
+
+main .m_content .call_to_action li:hover {
+  transform: scale(1.2);
+} 
+
+main .m_content .call_to_action ul li a{
+  text-decoration: none;
+  color: white;
+}
+/* ///////   C A L L   TO    A C T I O N  /////// */
 
 main .covers {
   padding: 20px;
   padding-top: 95px;  
-}
-
-.mc_btn {
-  margin: 10px;
-  margin-right: 48px;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 34px;
-  border-radius: 19px;
-  border-color: transparent;
 }
 
 /* /////    M  A I N   C O N T E N T  ////////*/
@@ -348,20 +447,33 @@ footer #player a:hover {
   /* body {
     background-color: red;
   } */
-  main .main-nav .nav-top .nav-logo-mobile{
+  main .main_nav .nav_top .nav_logo_mobile{
     display: block;
   }
-  main .main-nav .nav-top .nav-logo{
+  main .main_nav .nav_top .nav_logo{
     display: none;
   }
-  main .main-nav {
+  main .main_nav {
     width: 50px;
   }
   main .m_content {
     width: calc(100% - 50px);
   }
-  main .m_content, main .m_content .call-to-action {
+  main .m_content, main .m_content .call_to_action {
     width: calc(100% - 50px);
+  }
+  main .m_content .call_to_action ul li {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
   }
   #player .song .song_image {
     display: none;
@@ -400,6 +512,13 @@ footer #player a:hover {
   /* body {
     background-color: blue;
   } */
+  /* main .main_nav {
+    width: 230px;
+  } */
+  main .m_content .call_to_action ul li {
+    width: 240px;
+    margin-right: 2%;
+  }
   #player .song_fawsome .far.fa-heart.mc_f_awsome,
   #player .song_fawsome .far.fa-folder.mc_f_awsome {
     font-size: 1em;
