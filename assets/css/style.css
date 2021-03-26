@@ -376,7 +376,9 @@ footer #player a:hover {
     font-size: smaller;
   }
   #player .song_fawsome .far.fa-heart.mc_f_awsome,
-  #player .song_fawsome .far.fa-folder.mc_f_awsome,
+  #player .song_fawsome .far.fa-folder.mc_f_awsome {
+    display: none;
+  }
   #player .volume .fas.fa-desktop,
   #player .volume .fas.fa-list-ul {
     font-size: 0.7em;
@@ -401,6 +403,7 @@ footer #player a:hover {
   #player .song_fawsome .far.fa-heart.mc_f_awsome,
   #player .song_fawsome .far.fa-folder.mc_f_awsome {
     font-size: 1em;
+    display: block;
   }
   #player .song .song_image {
     display: block;
