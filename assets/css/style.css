@@ -32,6 +32,34 @@
   clear: both;
 }
 
+/*  B U T T O N */
+.btn_logo,
+.btn_text {
+  height: 100%;
+  float: left;
+}
+
+.btn_logo {
+  height: 40px;
+  width: 25%;
+  text-align: center;
+  color: #7B7B7A;
+}
+
+.btn_logo img{
+  height: 100%;
+  filter: brightness(0.5);
+}
+
+.btn_text {
+  width: 75%;
+  height: 100%;
+  font-size: 0.9em;
+  line-height: 40px;
+  font-weight: 500;
+}
+/*  B U T T O N */
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -64,6 +92,7 @@ main::after {
 }
 
 /* *****    M  A I N   N  A  V   ******* */
+/* logo */
 main .main_nav {
   float: left;
   width: 230px;
@@ -90,7 +119,9 @@ main .main_nav .nav_top .nav_logo_mobile{
   display: none;
   padding: 10px;
 }
+/* end logo */
 
+/* left menu */
 main .main_nav .nav_top .left_menu li{
   background-color: #000000;
   width: 230px;
@@ -112,37 +143,17 @@ main .main_nav .nav_top .left_menu li:hover img{
 
 main .main_nav .nav_top .left_menu li:active{
   background-color: #363232;
+  border-left: 4px solid #adf146b4 ;
 }
 
 main .main_nav .nav_top .left_menu ul li a{
   text-decoration: none;
 }
+/* end left menu */
 
-main .main_nav .nav_top .left_menu .btn_logo,
-.btn_text {
-  height: 100%;
-  float: left;
-}
+/* playlist */
 
-main .main_nav .nav_top .left_menu .btn_logo {
-  height: 40px;
-  width: 25%;
-  text-align: center;
-  color: #7B7B7A;
-}
-
-main .main_nav .nav_top .left_menu .btn_logo img{
-  height: 100%;
-  filter: brightness(0.5);
-}
-
-main .main_nav .nav_top .left_menu  .btn_text {
-  width: 75%;
-  height: 100%;
-  font-size: 0.9em;
-  line-height: 40px;
-  font-weight: 500;
-}
+/* end playlist */
 
 main .main_nav .nav_bottom{
   height: 80px;
