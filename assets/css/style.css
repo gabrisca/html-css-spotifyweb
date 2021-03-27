@@ -637,6 +637,26 @@ footer #player a:hover {
     display: none;
   }
 
+  main .main_nav .nav_bottom {
+    padding: 0 10px;
+  }
+
+  main .install_app {
+    border-bottom: 1px solid transparent;
+  }
+
+  main .install_app_img {
+    margin-left: 3px;
+  }
+
+  main .install_app_text {
+    display: none;
+  }
+
+  main .user_name {
+    display: none;
+  }
+
   main .m_content {
     width: calc(100% - 50px);
   }
@@ -703,6 +723,26 @@ footer #player a:hover {
   }
 
   main .playlist {
+    display: block;
+  }
+
+  main .main_nav .nav_bottom {
+    padding: 0 20px;
+  }
+
+  main .install_app {
+    border-bottom: 1px solid #7B7B7A;
+  }
+
+  main .install_app_img {
+    margin-left: 0px;
+  }
+
+  main .install_app_text {
+    display: block;
+  }
+
+  main .user_name {
     display: block;
   }
 
