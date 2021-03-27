@@ -22,6 +22,7 @@
 .mc_margin_left {
   margin-left: 10px;
 }
+
 .mc_margin_right {
   margin-right: 20px;
 }
@@ -30,6 +31,10 @@
   content: '';
   display: table;
   clear: both;
+}
+
+.mc_float_left {
+  float: left;
 }
 
 /*  B U T T O N */
@@ -46,7 +51,7 @@
   color: #7B7B7A;
 }
 
-.btn_logo img{
+.btn_logo img {
   height: 100%;
   filter: brightness(0.5);
 }
@@ -58,6 +63,7 @@
   line-height: 40px;
   font-weight: 500;
 }
+
 /*  B U T T O N */
 
 body {
@@ -79,10 +85,10 @@ body {
 /* ***************     M  A  I  N  ***************** */
 /* ************************************************* */
 
-main{
+main {
   max-width: 100%;
   height: calc(100vh - 90px);
-  background-color: #3e68b6;
+  /* background-color: #3e68b6; */
 }
 
 main::after {
@@ -97,32 +103,35 @@ main .main_nav {
   float: left;
   width: 230px;
   height: 100%;
-  background-color: darksalmon;
+  /* background-color: darksalmon; */
 }
 
-main .main_nav .nav_top{
+main .main_nav .nav_top {
   height: calc(100% - 80px);
   background-color: #000000;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
 }
 
-main .main_nav .nav_top .nav_logo{
+main .main_nav .nav_top .nav_logo {
   padding-top: 15px;
   margin-left: 15px;
   height: 90px;
 }
 
-main .main_nav .nav_top .nav_logo img{
+main .main_nav .nav_top .nav_logo img {
   width: 71%;
 }
 
-main .main_nav .nav_top .nav_logo_mobile{
+main .main_nav .nav_top .nav_logo_mobile {
   display: none;
   padding: 10px;
 }
+
 /* end logo */
 
 /* left menu */
-main .main_nav .nav_top .left_menu li{
+main .main_nav .nav_top .left_menu li {
   background-color: #000000;
   width: 230px;
   height: 40px;
@@ -131,34 +140,169 @@ main .main_nav .nav_top .left_menu li{
   cursor: pointer;
 }
 
-main .main_nav .nav_top .left_menu li:hover{
+main .main_nav .nav_top .left_menu li:hover {
   background-color: #272525;
-  border-left: 4px solid #A6F52D ;
+  border-left: 4px solid #A6F52D;
   color: white;
 }
 
-main .main_nav .nav_top .left_menu li:hover img{
+main .main_nav .nav_top .left_menu li:hover img {
   filter: brightness(1);
 }
 
-main .main_nav .nav_top .left_menu li:active{
+main .main_nav .nav_top .left_menu li:active {
   background-color: #363232;
-  border-left: 4px solid #adf146b4 ;
+  border-left: 4px solid #adf146b4;
 }
 
-main .main_nav .nav_top .left_menu ul li a{
+main .main_nav .nav_top .left_menu ul li a {
   text-decoration: none;
 }
+
 /* end left menu */
 
 /* playlist */
-
-/* end playlist */
-
-main .main_nav .nav_bottom{
-  height: 80px;
-  background-color: royalblue;
+main .playlist {
+  width: 230px;
+  margin-top: 25px;
+  padding-left: 20px;
 }
+
+main .playlist h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main .new_playlist {
+  width: 210px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+main .new_playlist:hover {
+  cursor: pointer;
+}
+
+main .new_playlist:hover .new_playlist_logo {
+  background-color: white;
+}
+
+main .new_playlist:hover .new_playlist_text {
+  color: white;
+}
+
+main .new_playlist_logo {
+  width: 24%;
+  height: 100%;
+  line-height: 50px;
+  background-color: #808080;
+  color: black;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+main .new_playlist_text {
+  width: 76%;
+  height: 100%;
+  line-height: 50px;
+  color: #7B7B7A;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+main .playlist ul {
+  list-style: none;
+  /* /* overflow-y: auto; */
+  /* height: 100%; */
+  /* background-color: chartreuse; */
+}
+
+main .playlist li {
+  /* height: 20px; */
+  margin-bottom: 15px;
+  /* background-color: coral; */
+}
+
+main .playlist ul li a {
+  text-decoration: none;
+  color: #7B7B7A;
+  font-size: 0.9em;
+}
+
+main .playlist ul li a:hover {
+  color: white;
+}
+
+/* playlist end*/
+
+/* nav bottom */
+main .main_nav .nav_bottom {
+  height: 80px;
+  width: 230px;
+  background-color: #000000;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .install_app,
+main .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+main .install_app {
+  border-bottom: 1px solid #7B7B7A;
+  margin-bottom: 4px;
+}
+
+main .user:hover .user_name,
+main .install_app:hover .install_app_text {
+  color: white;
+}
+
+main .install_app:hover .install_app_img img {
+  filter: brightness(1);
+}
+
+main .install_app_img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+main .install_app img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+
+main .install_app_text {
+  color: #7B7B7A;
+  font-size: 0.9em;
+}
+
+main .user_img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #7B7B7A;
+}
+
+main .user_name {
+  color: white;
+  font-weight: 700;
+}
+
+/* //// nav bottom ////*/
+
 /* /////    M  A I N   N  A V  ////////*/
 
 /* *****    M  A I N   C O N T E N T   ******* */
@@ -176,8 +320,9 @@ main .m_content .call_to_action {
   background-color: rgba(14, 7, 7, 0.8);
   position: fixed;
   width: calc(100% - 230px);
-  z-index: 1;
+  z-index: 998;
   text-align: center;
+
 }
 
 main .m_content .call_to_action ul {
@@ -188,7 +333,7 @@ main .m_content .call_to_action ul:after {
   content: '';
   display: table;
   clear: both;
-} 
+}
 
 main .m_content .call_to_action ul li {
   width: 240px;
@@ -210,17 +355,18 @@ main .m_content .call_to_action li:active {
 
 main .m_content .call_to_action li:hover {
   transform: scale(1.2);
-} 
+}
 
-main .m_content .call_to_action ul li a{
+main .m_content .call_to_action ul li a {
   text-decoration: none;
   color: white;
 }
+
 /* ///////   C A L L   TO    A C T I O N  /////// */
 
 main .covers {
   padding: 20px;
-  padding-top: 95px;  
+  padding-top: 95px;
 }
 
 /* /////    M  A I N   C O N T E N T  ////////*/
@@ -228,17 +374,21 @@ main .covers {
 /* ///////////////////////////////////////////////// */
 /* //////////////   M   A   I   N      ///////////// */
 /* ///////////////////////////////////////////////// */
-                        /*  */
-                        /*  */
-                        /*  */
-                        /*  */
-                        /*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /* ************************************************* */
 /* ***************     F  O O T E R   ************** */
 /* ************************************************* */
 footer {
   height: 90px;
+  width: 100%;
   background-color: #282828;
+  position: fixed;
+  z-index: 999;
+  padding: 0 5px;
 }
 
 footer #player {
@@ -250,11 +400,11 @@ footer #player {
   padding: 5px;
 }
 
-footer #player ul{
+footer #player ul {
   list-style: none;
 }
 
-footer #player a{
+footer #player a {
   text-decoration: none;
   color: white;
 }
@@ -284,19 +434,20 @@ footer #player a:hover {
   margin-right: 10px;
 }
 
-#player .song .song_name h4{
+#player .song .song_name h4 {
   font-weight: 600;
   color: white;
 }
 
-#player .song .song_name p{
+#player .song .song_name p {
   font-size: 0.8em;
   color: #7B7B7A;
 }
 
-#player .song .song_fawsome .mc_f_awsome{
+#player .song .song_fawsome .mc_f_awsome {
   padding: 5px;
 }
+
 /* /////////// P L A Y E R   S O N G  /////////*/
 
 /* *********** P L A Y E R   C O N T R O L S  ********/
@@ -343,7 +494,7 @@ footer #player a:hover {
   cursor: pointer;
 }
 
-#player .controls .controls_timing .timing_barr:hover .barr{
+#player .controls .controls_timing .timing_barr:hover .barr {
   background-color: #A6F52D;
 }
 
@@ -371,6 +522,7 @@ footer #player a:hover {
 .timing_barr:hover .barr_point {
   display: block;
 }
+
 /* ///////// P L A Y E R   C O N T R O L S  /////////*/
 
 /* ****** P L A Y E R   A U D I O   V O L U M E  *****/
@@ -440,79 +592,91 @@ footer #player a:hover {
 .volume_barr:hover .barr_point {
   display: block;
 }
+
 /* ****** P L A Y E R   A U D I O   V O L U M E  *****/
 
 /* ///////////////////////////////////////////////// */
 /* //////////////    F  O O T E R      ///////////// */
 /* ///////////////////////////////////////////////// */
-                        /*  */
-                        /*  */
-                        /*  */
-                        /*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /* ************************************************* */
 /* *******     M E D I A    Q U E R I E S   ******** */
 /* ************************************************* */
 
 /* // x-Small devices  */
 @media all and (max-width: 575px) {
+
   /* body {
     background-color: red;
   } */
-  main .main_nav .nav_top .nav_logo_mobile{
+  main .main_nav .nav_top .nav_logo_mobile {
     display: block;
   }
-  main .main_nav .nav_top .nav_logo{
+
+  main .main_nav .nav_top .nav_logo {
     display: none;
   }
+
   main .main_nav {
     width: 50px;
   }
+
+  main .main_nav .nav_top .left_menu li {
+    width: 50px;
+    padding-left: 5px;
+  }
+
+  main .btn_text {
+    display: none;
+  }
+
+  main .playlist {
+    display: none;
+  }
+
   main .m_content {
     width: calc(100% - 50px);
   }
-  main .m_content, main .m_content .call_to_action {
+
+  main .m_content,
+  main .m_content .call_to_action {
     width: calc(100% - 50px);
   }
+
   main .m_content .call_to_action ul li {
     width: 180px;
-    height: 45px;
-    line-height: 45px;
-    float: right;
     margin-right: 2%;
-    margin-top: 20px;
-    border-radius: 30px;
-    border: 2px solid white;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 0.9em;
   }
-  #player .song .song_image {
+
+  #player .song .song_name {
     display: none;
   }
-  #player .song .song_name {
-    margin-right: 0px;
+
+  #player .song .song_image {
+    height: 60%;
   }
-  #player .song .song_name h4{
-    font-size: smaller;
-  }
-  #player .song .song_name p{
-    font-size: smaller;
-  }
-  #player .song_fawsome .far.fa-heart.mc_f_awsome,
+
+  /* #player .song_fawsome .far.fa-heart.mc_f_awsome,
   #player .song_fawsome .far.fa-folder.mc_f_awsome {
     display: none;
-  }
+  } */
   #player .volume .fas.fa-desktop,
   #player .volume .fas.fa-list-ul {
+    display: none;
+  }
+
+  #player .controls .controls_button ul li {
+    padding: 5px;
     font-size: 0.7em;
   }
-  #player .controls .controls_button ul li {
-  padding: 5px;
-  font-size: 0.7em;
-  }
+
   #player .controls .controls_timing .timing_barr {
     width: 70px;
   }
+
   #player .volume .volume_menu .volume_audio .volume_barr {
     display: none;
   }
@@ -520,37 +684,58 @@ footer #player a:hover {
 
 /* // Small devices (landscape phones, 576px and up)  */
 @media all and (min-width: 576px) {
+
   /* body {
     background-color: blue;
-  } */
-  /* main .main_nav {
-    width: 230px;
   } */
   main .m_content .call_to_action ul li {
     width: 240px;
     margin-right: 2%;
   }
-  #player .song_fawsome .far.fa-heart.mc_f_awsome,
+
+  main .btn_text {
+    display: block;
+  }
+
+  main .main_nav .nav_top .left_menu li {
+    width: 230px;
+    padding-left: 10px;
+  }
+
+  main .playlist {
+    display: block;
+  }
+
+  /* #player .song_fawsome .far.fa-heart.mc_f_awsome,
   #player .song_fawsome .far.fa-folder.mc_f_awsome {
     font-size: 1em;
     display: block;
-  }
-  #player .song .song_image {
+  } */
+  #player .song .song_name {
     display: block;
-    height: 50%;
   }
+
   #player .controls .controls_button ul li {
     padding: 5px;
     font-size: 1em;
-    }
+  }
+
   #player .controls .controls_timing .timing_barr {
     width: 200px;
   }
+
   #player .volume .volume_menu .volume_audio .volume_barr {
     width: 60px;
   }
+
   #player .volume .volume_menu .volume_audio .volume_barr {
     display: none;
+  }
+
+  #player .volume .fas.fa-desktop,
+  #player .volume .fas.fa-list-ul {
+    display: block;
+    font-size: 1em;
   }
 }
 
@@ -559,13 +744,16 @@ footer #player a:hover {
   #player .volume .volume_menu .volume_audio .volume_barr {
     width: 100px;
   }
+
   #player .song .song_image {
     height: 90%;
   }
+
   #player .volume .fas.fa-desktop,
   #player .volume .fas.fa-list-ul {
     display: block;
   }
+
   #player .volume .volume_menu .volume_audio .volume_barr {
     display: block;
   }
@@ -573,6 +761,7 @@ footer #player a:hover {
 
 /* // Large devices (desktops, 992px and up) */
 @media all and (min-width: 992px) {
+
   /* body {
     background-color: rgba(245, 231, 231, 0.822);
   } */
