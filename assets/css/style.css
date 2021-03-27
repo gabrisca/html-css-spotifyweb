@@ -364,9 +364,56 @@ main .m_content .call_to_action ul li a {
 
 /* ///////   C A L L   TO    A C T I O N  /////// */
 
+/********* top menu *******/
+main .m_content .top_menu ul {
+  padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+main .m_content .top_menu ul li {
+  padding: 10px;
+  position: relative;
+}
+
+main .m_content .top_menu ul li:hover a {
+  color: white;
+}
+
+main .m_content .top_menu ul li:active a {
+  color: rgb(170, 148, 148);
+}
+
+main .m_content .top_menu ul li:hover .green_line {
+  display: block;
+}
+
+main .m_content .top_menu ul li a {
+  text-decoration: none;
+  color: #7B7B7A;
+  font-weight: 700;
+}
+
+main .green_line {
+  position: absolute;
+  left: 40%;
+  width: 22px;
+  height: 5px;
+  background-color: #adf146b4;
+  text-align: center;
+  display: none;
+}
+
+/********* top menu end *******/
+
 main .covers {
   padding: 20px;
-  padding-top: 95px;
+  /* padding-top: 95px; */
 }
 
 /* /////    M  A I N   C O N T E N T  ////////*/
