@@ -21,22 +21,24 @@
 </head>
 
 <body>
+  <!-- CONTAINER GENERAL -->
   <div class="container-general debug">
-
     <!-- main -->
     <main>
       <!-- ****** MAIN NAV ****** -->
-      <div class="main_nav">
-        <!-- nav top -->
+      <section class="main_nav">
+        <!-- **** NAV TOP-->
         <div class="nav_top">
-
+          <!-- NAV LOGO -->
           <div class="nav_logo">
             <img src="assets/img/logo.svg" alt="logo spotify">
           </div>
           <div class="nav_logo_mobile">
             <img src="assets/img/logo-small.svg" alt="logo spotify small">
           </div>
+          <!-- / NAV LOGO -->
 
+          <!-- LEFT MENU -->
           <div class="left_menu mc_colorgrey">
             <ul>
               <li class="mc_clearfix">
@@ -73,9 +75,10 @@
               </li>
             </ul>
           </div>
+          <!-- / LEFT MENU -->
 
+          <!-- PLAYLIST -->
           <div class="playlist">
-
             <h3 class="mc_colorwhite">playlist</h3>
             <div class="new_playlist mc_clearfix">
               <div class="new_playlist_logo mc_float_left">
@@ -85,7 +88,6 @@
                 <p>Crea Playlist</p>
               </div>
             </div>
-
             <ul>
               <li>
                 <a href="#">Nome Playlist</a>
@@ -111,9 +113,9 @@
             </ul>
           </div>
         </div>
-        <!-- / nav top-->
+        <!-- //// NAV TOP-->
 
-        <!-- nav bottom-->
+        <!-- *** NAV BOTTOM-->
         <div class="nav_bottom">
           <div class="install_app">
             <div class="install_app_img">
@@ -133,13 +135,13 @@
             </div>
           </div>
         </div>
-        <!-- / nav bottom -->
-      </div>
+        <!-- /// NAV BOTTOM-->
+      </section>
       <!-- ////// MAIN NAV ////// -->
 
       <!-- ***** MAIN CONTENT **** -->
       <section class="m_content">
-        <!-- call to action -->
+        <!-- CALL TO ACTION -->
         <div class="call_to_action">
           <ul>
             <li>
@@ -147,9 +149,9 @@
             </li>
           </ul>
         </div>
-        <!-- call to action -->
+        <!-- CALL TO ACTION-->
 
-        <!-- top menu -->
+        <!-- TOP MENU-->
         <div class="top_menu">
           <ul>
             <li>
@@ -177,13 +179,17 @@
               <div class="green_line"></div>
             </li>
           </ul>
-          <!-- / top menu -->
+          <!-- / TOP MENU -->
         </div>
 
+        <!-- *** COVERS -->
         <div class="covers">
+          <!-- Recently played -->
           <div class="covers_title">
             <h1 class="mc_colorwhite">Recently played</h1>
-            <div class="row_covers">
+            <!-- flex covers -->
+            <div class="flex_covers">
+              <!-- 1st album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/metal_lifting.jpg" alt="album heavy metal">
@@ -196,6 +202,9 @@
                   </div>
                 </div>
               </div>
+              <!-- / 1st album -->
+
+              <!-- 2nd album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/stranger.jpeg" alt="album stranger things">
@@ -208,6 +217,9 @@
                   </div>
                 </div>
               </div>
+              <!-- / 2nd album -->
+
+              <!-- 3rd album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/aquietplace.jpeg" alt="album a quiet place">
@@ -220,6 +232,9 @@
                   </div>
                 </div>
               </div>
+              <!-- / 3rd album -->
+
+              <!-- 4th album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/split.jpeg" alt="album split">
@@ -232,6 +247,9 @@
                   </div>
                 </div>
               </div>
+              <!-- / 4th album -->
+
+              <!-- 5th album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/cure.jpeg" alt="album a cure for wellnes">
@@ -244,6 +262,9 @@
                   </div>
                 </div>
               </div>
+              <!-- / 5th album -->
+
+              <!-- 6th album -->
               <div class="albums">
                 <div class="cover">
                   <img src="assets/img/sinister.jpeg" alt="album sinister">
@@ -256,64 +277,95 @@
                   </div>
                 </div>
               </div>
+              <!-- / 6th album -->
             </div>
+            <!-- / flex covers -->
           </div>
+          <!-- / Recently played -->
 
-          <h1 class="mc_colorwhite">Creato per John Doe</h1>
-          <p class="mc_colorgrey mc_margin_left_20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
-          <div class="row_covers">
-            <div class="albums">
-              <div class="cover">
-                <img src="assets/img/radar.jpeg" alt="album realease radar">
-                <div class="cover_text">
-                  <h3 class="mc_colorwhite">Release Radar</h3>
-                </div>
-                <div class="play_me">
-                  <i class="far fa-play-circle fa-4x"></i>
-                </div>
-              </div>
-            </div>
-            <div class="albums">
-              <div class="cover">
-                <img src="assets/img/mixdaily.jpeg" alt="album daily mix 1">
-                <div class="cover_text">
-                  <h3 class="mc_colorwhite">Daily Mix 1</h3>
-                </div>
-                <div class="play_me">
-                  <i class="far fa-play-circle fa-4x"></i>
+          <!-- Creato per John Doe -->
+          <div class="covers_title">
+            <h1 class="mc_colorwhite">Creato per John Doe</h1>
+            <p class="mc_colorgrey mc_margin_left_20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
+            <!-- flex covers -->
+            <div class="flex_covers">
+              <!-- 1st album -->
+              <div class="albums">
+                <div class="cover">
+                  <img src="assets/img/radar.jpeg" alt="album realease radar">
+                  <div class="cover_text">
+                    <h3 class="mc_colorwhite">Release Radar</h3>
+                  </div>
+                  <div class="play_me">
+                    <i class="far fa-play-circle fa-4x"></i>
+                  </div>
                 </div>
               </div>
+              <!-- / 1st album -->
+
+              <!-- 2nd album -->
+              <div class="albums">
+                <div class="cover">
+                  <img src="assets/img/mixdaily.jpeg" alt="album daily mix 1">
+                  <div class="cover_text">
+                    <h3 class="mc_colorwhite">Daily Mix 1</h3>
+                  </div>
+                  <div class="play_me">
+                    <i class="far fa-play-circle fa-4x"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- / 2nd album -->
             </div>
+            <!-- / flex covers -->
           </div>
+          <!-- / Creato per John Doe -->
 
-          <h1 class="mc_colorwhite">Artisti più popolari</h1>
-          <p class="mc_colorgrey mc_margin_left_20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
-          <div class="row_covers">
-            <div class="albums">
-              <div class="cover">
-                <img class="mc_b_radius" src="assets/img/youg.jpeg" alt="album young">
-                <div class="cover_text">
-                  <h3 class="mc_colorwhite">Young</h3>
-                </div>
-                <div class="play_me">
-                  <i class="far fa-play-circle fa-4x"></i>
-                </div>
-              </div>
-            </div>
-            <div class="albums">
-              <div class="cover">
-                <img class="mc_b_radius" src="assets/img/einaudi.jpeg" alt="">
-                <div class="cover_text">
-                  <h3 class="mc_colorwhite">Einaudi</h3>
-                </div>
-                <div class="play_me">
-                  <i class="far fa-play-circle fa-4x"></i>
+          <!-- Artisti più popolari -->
+          <div class="covers_title">
+            <h1 class="mc_colorwhite">Artisti più popolari</h1>
+            <p class="mc_colorgrey mc_margin_left_20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
+            <!-- flex covers -->
+            <div class="flex_covers">
+              <!-- 1st album -->
+              <div class="albums">
+                <div class="cover">
+                  <img class="mc_b_radius" src="assets/img/youg.jpeg" alt="album young">
+                  <div class="cover_text">
+                    <h3 class="mc_colorwhite">Young</h3>
+                  </div>
+                  <div class="play_me">
+                    <i class="far fa-play-circle fa-4x"></i>
+                  </div>
                 </div>
               </div>
+              <!-- / 1st album -->
+
+              <!-- 2nd album -->
+              <div class="albums">
+                <div class="cover">
+                  <img class="mc_b_radius" src="assets/img/einaudi.jpeg" alt="">
+                  <div class="cover_text">
+                    <h3 class="mc_colorwhite">Einaudi</h3>
+                  </div>
+                  <div class="play_me">
+                    <i class="far fa-play-circle fa-4x"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- / 2nd album -->
             </div>
+            <!-- / flex covers -->
           </div>
+          <!-- / Artisti più popolari -->
+        </div>
+        <!-- /// COVERS -->
+      </section>
+      <!-- //////// MAIN CONTENT ////// -->
+    </main>
+    <!-- / main -->
 
-          <!-- <div class="covers_title">
+    <!-- <div class="covers_title">
             <h1 class="mc_colorwhite">Recently played</h1>
           <div class="flex-container">
             <div>
@@ -372,16 +424,13 @@
             </div>
           </div>
         </div> -->
-        </div>
-      </section>
-      <!-- //////// MAIN CONTENT ////// -->
 
-    </main>
-    <!-- / main -->
 
-    <!-- ******* footer ******-->
+    <!-- ******* FOOTER ******-->
     <footer>
+      <!-- PLAYER -->
       <section id="player">
+        <!-- song -->
         <div class="song">
           <div class="song_image">
             <img src="assets/img/sinister.jpeg" alt="Song Cover">
@@ -399,7 +448,9 @@
             <a href="#"><i class="far fa-folder mc_f_awsome"></i></a>
           </div>
         </div>
+        <!-- / song -->
 
+        <!-- controls -->
         <div class="controls">
           <div class="controls_button">
             <ul>
@@ -410,7 +461,6 @@
               <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
             </ul>
           </div>
-
           <div class="controls_timing">
             <div class="time">0:25</div>
             <div class="timing_barr">
@@ -421,7 +471,9 @@
             <div class="time">4:35</div>
           </div>
         </div>
+        <!-- / controls -->
 
+        <!-- volume -->
         <div class="volume">
           <ul class="volume_menu">
             <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
@@ -436,11 +488,13 @@
             </li>
           </ul>
         </div>
+        <!-- /volume -->
       </section>
+      <!-- /  PLAYER -->
     </footer>
     <!-- /////// footer //////-->
-
   </div>
+  <!-- / CONTAINER GENERAL -->
 </body>
 
 </html>
