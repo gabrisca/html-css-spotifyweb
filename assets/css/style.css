@@ -87,6 +87,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 /* //////////////////// - E N D - ////////////////// */
 /* //////////////    G E N E R A L     ///////////// */
 /* ///////////////////////////////////////////////// */
@@ -167,6 +168,7 @@ main .main_nav .nav_top .left_menu li:active {
 main .main_nav .nav_top .left_menu ul li a {
   text-decoration: none;
 }
+
 /* left menu end */
 
 /* playlist */
@@ -238,6 +240,7 @@ main .playlist ul li a {
 main .playlist ul li a:hover {
   color: white;
 }
+
 /* playlist end*/
 
 /* nav bottom */
@@ -249,7 +252,7 @@ main .main_nav .nav_bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 900  ;
+  z-index: 900;
   position: fixed;
 }
 
@@ -487,6 +490,7 @@ main .cover .play_me {
   color: white;
   display: none;
 }
+
 /********* covers end *******/
 /* /////    M  A I N   C O N T E N T  ////////*/
 
@@ -548,7 +552,6 @@ footer {
 
 footer #player {
   display: flex;
-  /* flex-shrink: 0; */
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -570,9 +573,11 @@ footer #player a:hover {
 
 /* ********** P L A Y E R   S O N G *********/
 #player .song {
+  width: 25%;
   height: 100%;
+  padding: 1%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -607,7 +612,9 @@ footer #player a:hover {
 
 /* *********** P L A Y E R   C O N T R O L S  ********/
 #player .controls {
+  width: 50%;
   height: 100%;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -615,23 +622,27 @@ footer #player a:hover {
 }
 
 #player .controls .controls_button {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 5px;
 }
 
 #player .controls .controls_button ul li {
   display: inline-block;
-  padding: 0 15px;
   font-size: 1.2em;
+  padding: 0 5px;
   vertical-align: middle;
 }
 
 #player .controls .controls_timing {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 #player .controls .controls_timing .time {
@@ -643,7 +654,7 @@ footer #player a:hover {
 
 #player .controls .controls_timing .timing_barr {
   height: 5px;
-  width: 500px;
+  width: 100%;
   border-radius: 5px;
   background-color: #99999A;
   cursor: pointer;
@@ -682,16 +693,15 @@ footer #player a:hover {
 
 /* ****** P L A Y E R   A U D I O   V O L U M E  *****/
 #player .volume {
+  width: 25%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1%;
 }
 
 #player .volume .volume_menu {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -700,9 +710,9 @@ footer #player a:hover {
 }
 
 #player .volume .volume_menu .volume_audio {
-  width: 70%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -712,7 +722,7 @@ footer #player a:hover {
 
 #player .volume .volume_menu .volume_audio .volume_barr {
   height: 5px;
-  width: 100px;
+  width: 75%;
   border-radius: 5px;
   background-color: #99999A;
   cursor: pointer;
@@ -829,6 +839,8 @@ footer #player a:hover {
   }
 
   #player .song .song_name {
+    /* margin-right: 10px;
+    font-size: xx-small; */
     display: none;
   }
 
@@ -836,22 +848,27 @@ footer #player a:hover {
     height: 60%;
   }
 
-  #player .volume .fas.fa-desktop,
-  #player .volume .fas.fa-list-ul {
+  #player .song_fawsome {
     display: none;
   }
 
-  #player .controls .controls_button ul li {
-    padding: 5px;
-    font-size: 0.7em;
+  #player .controls .controls_button ul {
+    display: flex;
   }
 
-  #player .controls .controls_timing .timing_barr {
-    width: 70px;
-  }
-
-  #player .volume .volume_menu .volume_audio .volume_barr {
+  #player .controls .controls_timing {
     display: none;
+  }
+
+  #player .fas.fa-list-ul,
+  #player .fas.fa-desktop,
+  #player .fas.fa-random,
+  #player .fas.fa-redo-alt {
+    display: none;
+  }
+
+  #player .mc_f_awsome {
+    font-size: x-small;
   }
 }
 
@@ -891,7 +908,7 @@ footer #player a:hover {
 
   main .install_app img {
     width: 100%;
-}
+  }
 
   main .install_app_text {
     display: block;
@@ -907,62 +924,45 @@ footer #player a:hover {
 
   #player .song .song_name {
     display: block;
-  }
-
-  #player .controls .controls_button ul li {
-    padding: 5px;
-    font-size: 1em;
-  }
-
-  #player .controls .controls_timing .timing_barr {
-    width: 200px;
-  }
-
-  #player .volume .volume_menu .volume_audio .volume_barr {
-    width: 60px;
-  }
-
-  #player .volume .volume_menu .volume_audio .volume_barr {
-    display: none;
-  }
-
-  #player .volume .fas.fa-desktop,
-  #player .volume .fas.fa-list-ul {
-    display: block;
-    font-size: 1em;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media all and (min-width: 768px) {
-  #player .volume .volume_menu .volume_audio .volume_barr {
-    width: 100px;
+    font-size: small;
   }
 
   #player .song .song_image {
     height: 90%;
   }
 
-  #player .volume .fas.fa-desktop,
-  #player .volume .fas.fa-list-ul {
+  #player .song_fawsome {
     display: block;
   }
 
-  #player .volume .volume_menu .volume_audio .volume_barr {
+  #player .controls .controls_button ul {
     display: block;
+  }
+
+  #player .controls .controls_timing {
+    width: 80%;
+  }
+
+  #player .fas.fa-random,
+  #player .fas.fa-redo-alt {
+    display: block;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media all and (min-width: 768px) {
+  #player .song .song_name {
+    font-size: medium;
+  }
+
+  #player .controls .controls_timing {
+    width: 100%;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media all and (min-width: 992px) {
-  #player .controls .controls_timing .timing_barr {
-    height: 5px;
-    width: 500px;
-    border-radius: 5px;
-    background-color: #99999A;
-    cursor: pointer;
-  }
-}
+@media all and (min-width: 992px) {}
+
 /* /////////////////// - E  N  D - ///////////////// */
 /* /////////   M E D I A    Q U E R I E S    /////// */
 /* ///////////////////////////////////////////////// */
