@@ -423,8 +423,8 @@ main .green_line {
 
 /********* covers *******/
 main .covers {
-  /* padding: 20px; */
-  /* padding-top: 95px; */
+  display: flex;
+  flex-direction: column;
 }
 
 main .covers h1 {
@@ -435,11 +435,8 @@ main .covers h1 {
 
 main .flex_covers {
   display: flex;
-  /* background-color: chartreuse; */
-  /* flex-direction: row;
-  justify-content: flex-start; */
-  /* flex-wrap:nowrap; */
   flex-wrap: wrap;
+  /* background-color: #A6F52D; */
 }
 
 main .albums {
@@ -447,9 +444,6 @@ main .albums {
   height: 300px;
   cursor: pointer;
   margin-bottom: 20px;
-  /* flex-grow: 2; */
-  /* flex-shrink: 7; */
-  /* background-color: blue; */
   text-align: center;
 }
 
