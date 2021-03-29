@@ -100,7 +100,6 @@ body {
 main {
   max-width: 100%;
   height: calc(100vh - 90px);
-  /* background-color: #3e68b6; */
 }
 
 main::after {
@@ -121,8 +120,6 @@ main .main_nav {
 main .main_nav .nav_top {
   height: calc(100% - 80px);
   background-color: #000000;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 main .main_nav .nav_top .nav_logo {
@@ -176,6 +173,7 @@ main .main_nav .nav_top .left_menu ul li a {
 /* playlist */
 main .playlist {
   width: 230px;
+  height: 60%;
   margin-top: 25px;
   padding-left: 20px;
 }
@@ -223,6 +221,8 @@ main .new_playlist_text {
 }
 
 main .playlist ul {
+  height: 70%;
+  /* background-color: aqua  ; */
   list-style: none;
   overflow-y: auto;
 }
@@ -252,6 +252,8 @@ main .main_nav .nav_bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 900  ;
+  position: fixed;
 }
 
 main .install_app,
@@ -720,7 +722,6 @@ footer #player a:hover {
   padding-right: 10px;
 }
 
-/* qui creiamo la barra totale dell'volume */
 #player .volume .volume_menu .volume_audio .volume_barr {
   height: 5px;
   width: 100px;
@@ -773,10 +774,6 @@ footer #player a:hover {
 
 /* // x-Small devices  */
 @media all and (max-width: 575px) {
-
-  /* body {
-    background-color: red;
-  } */
   main .main_nav .nav_top .nav_logo_mobile {
     display: block;
   }
@@ -804,14 +801,20 @@ footer #player a:hover {
 
   main .main_nav .nav_bottom {
     padding: 0 10px;
+    width: 50px;
   }
 
   main .install_app {
     border-bottom: 1px solid transparent;
+    justify-content: center;
   }
 
   main .install_app_img {
-    margin-left: 3px;
+    margin-right: 0px;
+  }
+
+  main .install_app img {
+    width: 90%;
   }
 
   main .install_app_text {
@@ -820,6 +823,10 @@ footer #player a:hover {
 
   main .user_name {
     display: none;
+  }
+
+  main .user_img {
+    margin-right: 0px;
   }
 
   main .m_content {
@@ -833,7 +840,7 @@ footer #player a:hover {
 
   main .m_content .call_to_action ul li {
     width: 180px;
-    margin-right: 2%;
+    margin-right: 10%;
   }
 
   #player .song .song_name {
@@ -844,10 +851,6 @@ footer #player a:hover {
     height: 60%;
   }
 
-  /* #player .song_fawsome .far.fa-heart.mc_f_awsome,
-  #player .song_fawsome .far.fa-folder.mc_f_awsome {
-    display: none;
-  } */
   #player .volume .fas.fa-desktop,
   #player .volume .fas.fa-list-ul {
     display: none;
@@ -869,13 +872,9 @@ footer #player a:hover {
 
 /* // Small devices (landscape phones, 576px and up)  */
 @media all and (min-width: 576px) {
-
-  /* body {
-    background-color: blue;
-  } */
   main .m_content .call_to_action ul li {
     width: 240px;
-    margin-right: 2%;
+    margin-right: 6%;
   }
 
   main .btn_text {
@@ -893,15 +892,21 @@ footer #player a:hover {
 
   main .main_nav .nav_bottom {
     padding: 0 20px;
+    width: 230px;
   }
 
   main .install_app {
     border-bottom: 1px solid #7B7B7A;
+    justify-content: flex-start;
   }
 
   main .install_app_img {
-    margin-left: 0px;
+    margin-right: 10px;
   }
+
+  main .install_app img {
+    width: 100%;
+}
 
   main .install_app_text {
     display: block;
@@ -911,11 +916,10 @@ footer #player a:hover {
     display: block;
   }
 
-  /* #player .song_fawsome .far.fa-heart.mc_f_awsome,
-  #player .song_fawsome .far.fa-folder.mc_f_awsome {
-    font-size: 1em;
-    display: block;
-  } */
+  main .user_img {
+    margin-right: 10px;
+  }
+
   #player .song .song_name {
     display: block;
   }
@@ -966,10 +970,6 @@ footer #player a:hover {
 
 /* // Large devices (desktops, 992px and up) */
 @media all and (min-width: 992px) {
-
-  /* body {
-    background-color: rgba(245, 231, 231, 0.822);
-  } */
   #player .controls .controls_timing .timing_barr {
     height: 5px;
     width: 500px;
