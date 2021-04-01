@@ -58,24 +58,23 @@
 
 .btn_logo {
   height: 40px;
-  width: 25%;
+  width: 19%;
   text-align: center;
   color: #7B7B7A;
 }
 
 .btn_logo img {
-  height: 100%;
+  height: 80%;
   filter: brightness(0.5);
 }
 
 .btn_text {
-  width: 75%;
+  width: 81%;
   height: 100%;
   font-size: 0.9em;
   line-height: 40px;
   font-weight: 500;
 }
-
 /*  B U T T O N */
 
 body {
@@ -141,6 +140,10 @@ main .main_nav .nav_top .nav_logo_mobile {
 /* nav logo end */
 
 /* left menu */
+main .main_nav .nav_top .left_menu ul.border_active li:first-child{
+  border-left: 4px solid #A6F52D;
+}
+
 main .main_nav .nav_top .left_menu li {
   background-color: #000000;
   width: 230px;
@@ -148,6 +151,9 @@ main .main_nav .nav_top .left_menu li {
   padding-left: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transition: border-left 0.3s;
 }
 
 main .main_nav .nav_top .left_menu li:hover {
@@ -203,9 +209,9 @@ main .new_playlist:hover .new_playlist_text {
 }
 
 main .new_playlist_logo {
-  width: 24%;
-  height: 100%;
-  line-height: 50px;
+  width: 19%;
+  height: 85%;
+  line-height: 45px;
   background-color: #808080;
   color: black;
   text-align: center;
@@ -213,9 +219,9 @@ main .new_playlist_logo {
 }
 
 main .new_playlist_text {
-  width: 76%;
-  height: 100%;
-  line-height: 50px;
+  width: 81%;
+  height: 85%;
+  line-height: 45px;
   color: #7B7B7A;
   padding-left: 10px;
   font-weight: 700;
@@ -357,6 +363,7 @@ main .m_content .call_to_action ul li {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 0.9em;
+  transition: transform 0.3s;
 }
 
 main .m_content .call_to_action li:active {
@@ -406,18 +413,24 @@ main .m_content .top_menu ul li:hover .green_line {
 main .m_content .top_menu ul li a {
   text-decoration: none;
   color: #7B7B7A;
+  transition: color 0.3s;
   font-weight: 700;
 }
 
-main .green_line {
+main .m_content .top_menu ul li .green_line {
   position: absolute;
-  left: 40%;
-  width: 22px;
-  height: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30px;
+  height: 3px;
   background-color: #adf146b4;
   text-align: center;
   display: none;
 }
+
+main .m_content .top_menu ul li:first-child .green_line {
+  display: block;
+} 
 
 /********* top menu end *******/
 
@@ -453,10 +466,7 @@ main .cover {
 
 main .cover:hover img {
   filter: brightness(0.5);
-}
-
-main .cover:hover .play_me {
-  display: block;
+  transition: filter 0.3s;
 }
 
 main .cover img {
@@ -479,6 +489,10 @@ main .cover_title h3 {
   text-align: center;
   color: white;
   display: none;
+}
+
+main .cover:hover .play_me {
+  display: block; 
 }
 
 /********* covers end *******/
@@ -923,6 +937,13 @@ footer #player a:hover {
 @media all and (min-width: 992px) {
   main .albums {
     width: calc(100% / 6);
+  }
+}
+
+/* // nascondo .call_to_action quando la finestra è meno alta di 180px */
+@media all and (max-height: 180px) {
+  main .m_content .call_to_action {
+    display: none;
   }
 }
 
